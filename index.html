@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLB Khoa học - Kĩ thuật</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f3f6fb;
+            color: #333;
+        }
+
+        header {
+            background: url('https://scontent.fhan15-2.fna.fbcdn.net/v/t1.15752-9/620163577_1975993233351859_5883946128187358981_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeH58pXWhWTex6aSkV-RZrEOLclqNsfFzLItyWo2x8XMsgT1Ps3m7d8nfN_D3Ze0gXrL53SeMxlxhEm03b4Gj42L&_nc_ohc=DyQHVcee6hcQ7kNvwEIKRQp&_nc_oc=AdlGKkGmZfPeqCHTAfUMB98SoSjYwRDZH99qV30hU-A76prh3t9CUPphE4Qmm8JIqtw&_nc_zt=23&_nc_ht=scontent.fhan15-2.fna&oh=03_Q7cD4gHvKNjjnXQSvqOZsA8aAEIR4-s69h_hGgi9iaeMltM9ug&oe=69B5738B') center/cover no-repeat;
+            height: 320px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.55);
+        }
+
+        header div {
+            position: relative;
+            z-index: 1;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background: #111;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 30px;
+            color: #00bcd4;
+        }
+
+        .about p {
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .activities ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        .activities li {
+            margin: 12px 0;
+            font-size: 18px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <h1>CLB Khoa học - Kĩ thuật</h1>
+        <p>Sáng tạo hôm nay – Kiến tạo tương lai</p>
+    </div>
+</header>
+
+<nav>
+    <a href="#about">Giới thiệu</a>
+    <a href="#activities">Hoạt động</a>
+    <a href="#gallery">Hình ảnh</a>
+</nav>
+
+<section id="about" class="about">
+    <h2>Giới thiệu</h2>
+    <p>
+        CLB Khoa học - Kĩ thuật là nơi hội tụ những học sinh đam mê nghiên cứu, sáng tạo và công nghệ.
+        Chúng mình cùng nhau khám phá khoa học, thực hành thí nghiệm và phát triển các dự án STEM,
+        robot, lập trình và nhiều lĩnh vực công nghệ khác.
+    </p>
+</section>
+
+<section id="activities" class="activities">
+    <h2>Hoạt động nổi bật</h2>
+    <ul>
+        <li>🔬 Thực hành thí nghiệm khoa học</li>
+        <li>🤖 Thiết kế và lập trình robot</li>
+        <li>💻 Học lập trình và phát triển dự án</li>
+        <li>🚀 Tham gia cuộc thi sáng tạo khoa học</li>
+    </ul>
+</section>
+
+<section id="gallery">
+    <h2>Hình ảnh hoạt động</h2>
+    <div class="gallery">
+        <img src="https://scontent.fhan15-1.fna.fbcdn.net/v/t1.15752-9/625478596_1185750460436508_1150375512474158849_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEu3eAER3D7NqdIcKHQa3bprCwozLC3GqusLCjMsLcaqxsOalZ-Wy9Ud50CdbcyKgoLkJ92230erS9DnlpUWcwC&_nc_ohc=NLp4_aEKPOAQ7kNvwE1LEsc&_nc_oc=AdkwRvVfB8oe-vQ30XdpRuQSkvSj_bT50CFqMBi9mhEVonV-YAVJwH1zxyYfy0Icws8&_nc_zt=23&_nc_ht=scontent.fhan15-1.fna&oh=03_Q7cD4gEFIiJ-SqdcDzyb5tjZBkkU-ozOU95nccYw54zXOludKg&oe=69B547AC" alt="Hoạt động 1">
+        <img src="https://scontent.fhan15-1.fna.fbcdn.net/v/t1.15752-9/629963265_945679474560608_5621623484119546982_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGswTlqg_ZYAcnMUadUvFN8fXLO23EC1yF9cs7bcQLXIUuw-rcAyKUU1UZYvlTeVjk_G-Nc69A344bxZeJgxlys&_nc_ohc=YJjDLYG9VQoQ7kNvwE_8AuH&_nc_oc=Adlk1HcTpXoQ02FpcUHr90fxf3Y92e9gTg0jZLlmoORqIKwZm612xSCiQA8SG-k-DFI&_nc_zt=23&_nc_ht=scontent.fhan15-1.fna&oh=03_Q7cD4gEpljrTRCQY2ujqjMd5o3Z1CZjS0yzK9KIDnBvyGBBzsA&oe=69B56EE2" alt="Hoạt động 2">
+        <img src="https://scontent.fhan15-1.fna.fbcdn.net/v/t1.15752-9/625962221_1438397504527166_7965252977458031887_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeH2PFH4Dgijil8nySSOkQ6yqUFSgUC6h-epQVKBQLqH5yyptFBFr4D9TK3DyUtxbny1LWSlX3LyI7su6qfLRYpM&_nc_ohc=BZLQhQyfYnsQ7kNvwE1J2uv&_nc_oc=Admapulgg-eGv45k12KCACdLHtk244F18li-fx2MWlTEmRgoL1PX_1XON0ws60xDs6A&_nc_zt=23&_nc_ht=scontent.fhan15-1.fna&oh=03_Q7cD4gFRqBcSbFna1T2q8LyNh56mC3sPMWXZgXeAd7KYPQGqtQ&oe=69B53F9F" alt="Hoạt động 3">
+    </div>
+</section>
+
+<footer>
+    © 2026 CLB Khoa học - Kĩ thuật - Trường THPT
+</footer>
+
+</body>
+</html>
